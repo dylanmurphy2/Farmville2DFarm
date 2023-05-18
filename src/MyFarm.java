@@ -17,15 +17,15 @@ public class MyFarm {
         }
 
 //        totalPlants();
-//        printPlantNames();
+        printPlantNames();
 //        printPlantNames2();
 //        printRowInfo();
 //        addLettuce();
 //        tomatoLocations();
-//        totalCarrots();
+        totalCarrots();
 //        addTulip();
 //        averageNumberOfPlants();
-//        numberOfCarrotPlots();
+        numberOfCarrotPlots();
 //        numberOfEmptyPlots();
 //        plantWithMinNumber();
 //        greaterThan10();
@@ -145,14 +145,15 @@ public class MyFarm {
     }
 
     public void numberOfCarrotPlots() {
-        int n = 0;
-//        for (int x = 0; x < row.size(); x++){
-//            if(row.get(x).plantName.equals("carrots")){
-//                n = n +1;
-//            }
-        for (Plot plot : row) {
-            if (plot.plantName.equals("carrot")) {
-                n = n + 1;
+        int n = 5;
+        for (int x = 0; x < row.size(); x++){
+            if(row.get(x).plantName.equals("carrots")){
+                n = n +1;
+                for (Plot plot : row) {
+                    if (plot.plantName.equals("carrot")) {
+                        n = n + 1;
+                    }
+                }
             }
         }
         System.out.println("there are " + n + " plots with carrots on them");

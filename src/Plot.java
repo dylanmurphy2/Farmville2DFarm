@@ -3,6 +3,7 @@ public class Plot {
     public String plantName;
     public int numberOfPants;
     public boolean needsWater;
+    public int numberOfPlots;
 
     public Plot() {
         // assign variable values
@@ -13,13 +14,13 @@ public class Plot {
         if (plantID == 0) {
             plantName = "Carrot";
         } else if (plantID == 1) {
-            plantName = "tulip";
+            plantName = "tulip ";
         } else if (plantID == 2) {
             plantName = "lettuce";
         } else if (plantID == 3) {
             plantName = "Tomato";
         } else {
-            plantName = "Empty";
+            plantName = "Empty ";
             numberOfPants = 0;
         }
 
